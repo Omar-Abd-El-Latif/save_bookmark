@@ -1,0 +1,57 @@
+ body {
+   background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%) no-repeat fixed;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
+
+
+ .main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 60vh;
+
+ }
+
+ .container {
+   border: rgba(255, 255, 255, 0.77) 2px solid;
+   border-radius: 15px;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 30px;
+
+   transform: translatey(0px);
+   animation: float 6s ease-in-out infinite;
+   color: white;
+
+ }
+
+ .main2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .container2 {
+   border: rgba(255, 255, 255, 0.77) 2px solid;
+   background-color: rgba(0, 0, 0, 0.4);
+   width: 60%;
+   transform: translatey(0px);
+   color: white;
+
+ }
+
+ @keyframes float {
+   0% {
+     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+     transform: translatey(0px);
+   }
+
+   50% {
+     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+     transform: translatey(-20px);
+   }
+
+   100% {
+     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+     transform: translatey(0px);
+   }
+ }

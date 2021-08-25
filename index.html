@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMarks</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+
+  <div class=" main">
+
+    <div class="container">
+
+      <h1 class="d-flex justify-content-center">Bookmak</h1>
+      <div class="mb-3   ">
+        <label for="inputName" class="form-label">Site Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="name">
+      </div>
+      <div class="mb-3  ">
+        <label for="inputUrl" class="form-label">Url Name</label>
+        <input type="text" class="form-control" id="inputUrl" placeholder="ex :google , yahoo , youtube">
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="addBookmark()">Add</button>
+
+    </div>
+
+  </div>
+  <div class="main2">
+    <table class="table container2">
+      <thead>
+        <th class="bg-dark">Name</th>
+        <th class="bg-dark"></th>
+      </thead>
+      <tbody id="tableBookmark">
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+  <script src="main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
